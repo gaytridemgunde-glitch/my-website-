@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Hotel</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+
+    <!-- Header Section -->
+    <header>
+        <h1>Royal Hotel</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <h2>Welcome To Royal Hotel</h2>
+
+        <p>Enjoy Delicious Food With Royal Hospitality!</p>
+
+        <button onclick="welcomeMessage()">
+            Welcome
+        </button>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Royal Hotel provides delicious food and
+            excellent service to our customers.
+            We serve fresh and tasty food with
+            royal hospitality. our hotel provides delicious food, excellent service, and a pleasant dining experience.
+            we offer a variety of indian and tradition dishes prepared with fersh ingredient and great care. 
+        </p>  
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <h2>Our Special Dishes</h2>
+
+        <div class="menu-container">
+
+
+            <!-- Pizza Card -->
+            <div class="card">
+
+                <img src="pizza.jpg" alt="Pizza">
+
+                <h3>Pizza</h3>
+
+                <p>Delicious Cheese Pizza</p>
+
+                <h4>Price: ₹150</h4>
+
+                <button onclick="add('Pizza',150)">
+                    Add </button>
+
+            </div>
+
+
+            <!-- Burger Card -->
+            <div class="card">
+
+                <img src="burger.jpg" alt="Burger">
+
+                <h3>Burger</h3>
+
+                <p>Fresh And Tasty Burger</p>
+
+                <h4>Price: ₹100</h4>
+
+                <button onclick="add('Burger',100)">
+                    Add  </button>
+
+            </div>
+
+
+            <!-- Pav Bhaji Card -->
+            <div class="card">
+
+                <img src="pavbhaji.jpg" alt="Pav Bhaji">
+
+                <h3>Pav Bhaji</h3>
+
+                <p>Delicious Mumbai Style Pav Bhaji</p>
+
+                <h4>Price: ₹120</h4>
+
+                <button onclick="add('Pav Bhaji',120)">
+                    Add </button>
+
+            </div>
+
+
+            <!-- Chicken Biryani Card -->
+            <div class="card">
+
+                <img src="biryani.jpg" alt="Chicken Biryani">
+
+                <h3>Chicken Biryani</h3>
+
+                <p>Special Spicy Chicken Biryani</p>
+
+                <h4>Price: ₹200</h4>
+
+                <button onclick="add('Chicken Biryani',200)">
+                    Add </button>
+
+            </div>
+
+
+            <!-- Manchurian Card -->
+            <div class="card">
+
+                <img src="manchurian.jpg" alt="Manchurian">
+
+                <h3>Manchurian</h3>
+
+                <p>Delicious Chinese Style Manchurian</p>
+
+                <h4>Price: ₹150</h4>
+
+                <button onclick="add('Manchurian',150)">
+                    Add </button>
+
+            </div>
+
+
+        </div>
+
+
+        
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="Contact">
+
+        <h2>Contact Us</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+            >
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+
+        <p>© 2026 Royal Hotel. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
